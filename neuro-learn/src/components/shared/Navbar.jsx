@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link href="\profile">My Profile</Link>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl"> SkillSphere</a>
+    <Link href="\" className="btn btn-ghost text-xl font-bold"> SkillSphere</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-10">
