@@ -2,11 +2,30 @@
 import React from 'react';
 import Link from 'next/link';
 import { useForm, SubmitHandler } from "react-hook-form"
+import { authClient } from '@/lib/auth-client';
+import { toast } from 'react-toastify';
 
 const LoginForm = () => {
      const { register, handleSubmit , formState: { errors } } = useForm()
 
-    const handleLogin = (data)=> {
+    const handleLogin = async (data)=> {
+        const {email , password} = data; 
+        const { data : res, error } = await authClient.signIn.email({
+            email: email, 
+            password: password, 
+            rememberMe: true,
+            callbackURL: "/"
+        });
+
+         if(error){
+                    toast.error(error.message , {position: "top-center",
+                        autoClose: 3000,});
+                }
+         else{
+                    toast.success("Login Successful" , {position: "top-center",
+                        autoClose: 3000,}) ; 
+        }
+
         console.log(data , "data") ; 
         console.log(errors , "errors") ;
     }

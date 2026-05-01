@@ -2,14 +2,36 @@
 import React from 'react';
 import Link from 'next/link';
 import { useForm, SubmitHandler } from "react-hook-form"
+import { authClient } from '@/lib/auth-client';
+import { toast } from 'react-toastify';
 
 const RegistrationForm = () => {
      const { register, handleSubmit , formState: { errors } } = useForm()
     
-     const handleRegistration = (data)=> {
-        console.log(data , "data") ; 
-        console.log(errors , "errors") ;
+     const handleRegistration = async (data)=> {
+        const {name , email , url , password} = data ;
+
+        const { data : res, error } = await authClient.signUp.email({
+        name: name, 
+        email: email , 
+        password: password, 
+        image: url, 
+        callbackURL: "/login"
+        });
+
+        if(error){
+            toast.error(error.message , {position: "top-center",
+                autoClose: 3000,});
+        }
+        else{
+            toast.success("Registration Successful" , {position: "top-center",
+                autoClose: 3000,}) ; 
+        }
+        console.log(res , "res") ;
+        console.log(error) ; 
     }
+
+    
     return (
           <div className='flex justify-center items-center my-20'>
 
