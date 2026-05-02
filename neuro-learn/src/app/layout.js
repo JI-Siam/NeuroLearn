@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Roboto } from 'next/font/google'
 import { Ubuntu } from "next/font/google";
+import { Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
  import { ToastContainer, toast } from 'react-toastify';
@@ -17,8 +18,8 @@ const geistMono = Geist_Mono({
 
 
  
-const roboto = Roboto({
-  variable : "--font-roboto" , 
+const roboto = Roboto_Slab({
+  variable : "--font-roboto-slab" , 
   weight: '400',
   subsets: ['latin'],
 }) ; 

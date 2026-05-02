@@ -38,7 +38,7 @@ const user = session?.user ;
               <img src={user.image} alt="avatar" />
             </div>
           </div>
-           <btn className="ml-2 btn" onClick={async() => await authClient.signOut()}>Logout</btn>
+           <button className="ml-2 btn" onClick={async() => await authClient.signOut()}>Logout</button>
           </div>) : 
            ( <div>
               <Link href="\login" className="btn">Login</Link>

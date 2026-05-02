@@ -42,9 +42,10 @@ const Details =  async ({id}) => {
             <p className="text-gray-700 leading-relaxed">
                 {course.description}
             </p>
+              <button className="btn btn-primary">Enroll Now</button>
         </div>
-     
     </div>
+  
   </div>
         </div>
     );
