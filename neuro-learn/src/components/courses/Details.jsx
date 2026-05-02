@@ -2,10 +2,7 @@
 const Details =  async ({id}) => {
       const res = await fetch("http://localhost:3004/courses"); 
     const courses = await res.json(); 
-    console.log(id , "details"); 
-    console.log(courses, "deatils page fetch")
     const course = courses.find(crs => crs.id == id) ; 
-    console.log(course , "details")
 
     return (
         <div>   

@@ -41,7 +41,7 @@ const user = session?.user ;
            <button className="ml-2 btn" onClick={async() => await authClient.signOut()}>Logout</button>
           </div>) : 
            ( <div>
-              <Link href="\login" className="btn">Login</Link>
+              <Link href="\login" className="btn mr-4">Login</Link>
               <Link href="\signup" className="btn">SignUp</Link>
             </div>)
           }
