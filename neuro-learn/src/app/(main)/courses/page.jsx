@@ -1,10 +1,12 @@
 import AllCourses from '@/components/courses/AllCourses';
 
 
-const page = () => {
+const page = async () => {
+     const res = await fetch("http://localhost:3004/courses"); 
+    const courses = await res.json(); 
     return (
         <div>
-            <AllCourses></AllCourses>
+            <AllCourses courses={courses}></AllCourses>
         </div>
     );
 };

@@ -10,11 +10,11 @@ const Courses = async () => {
     const courses = await res.json(); 
     const topCourses = courses.sort((a,b) => b.rating - a.rating).slice(0,3); 
 
-    console.log(courses)
+   // console.log(courses)
     return (
         <div className='container mx-auto lg:mb-40'>
-            <h3 className="text-4xl font-bold text-center mb-20 font-[--font-roboto-slab]">Top Rated Courses</h3>
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-10'>
+            <h3 className="text-5xl text-center font-bold mb-20 font-[--font-roboto-slab]">Top Rated Courses</h3>
+            <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10'>
             {topCourses.map(course => <Course key={course.id} course={course}></Course>)}
         </div>
         </div>

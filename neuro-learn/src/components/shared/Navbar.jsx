@@ -9,7 +9,7 @@ const Navbar = () => {
  
 const { data: session } = authClient.useSession() ; 
 const user = session?.user ;
-  console.log(user , "session user") ;
+  //console.log(user , "session user") ;
 
     return (
 <div className="max-lg:collapse  shadow-sm lg:px-20 bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 text-white">

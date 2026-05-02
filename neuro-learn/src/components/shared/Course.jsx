@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IoIosStar } from "react-icons/io";
 
 const Course = ({course}) => {
-  console.log(course.id) ;
+ // console.log(course.id) ;
     return (
         <div>
                 <div className="card bg-base-100  shadow-sm shadow-purple-900">
