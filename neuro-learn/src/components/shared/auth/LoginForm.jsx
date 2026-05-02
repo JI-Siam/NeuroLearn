@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { authClient } from '@/lib/auth-client';
 import { toast } from 'react-toastify';
+import { FaGoogle } from "react-icons/fa";
 
 const LoginForm = () => {
      const { register, handleSubmit , formState: { errors } } = useForm()
@@ -29,6 +30,12 @@ const LoginForm = () => {
         console.log(data , "data") ; 
         console.log(errors , "errors") ;
     }
+
+    const handleGoogleLogin = async ()=> {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    }
     return (
         <div className='flex justify-center items-center my-20'>
             <form action="" onSubmit={handleSubmit(handleLogin)}>
@@ -45,10 +52,11 @@ const LoginForm = () => {
                     {errors.password && <p className='text-red-700'>{errors.password.message}</p>}
 
                     <input type="submit" className="btn btn-neutral mt-4" value="Login"/>
+                     <btn onClick={handleGoogleLogin} className="btn btn-neutral mt-4"> <FaGoogle></FaGoogle>Google</btn>
                     <p> Don't Have an Accout?  <Link href="\signup" className='text-primary font-bold'>Register Here</Link></p> 
                 </fieldset>
-
             </form>
+
                
         </div>
     );
