@@ -1,9 +1,10 @@
-import React from 'react';
+import AllCourses from '@/components/courses/AllCourses';
+
 
 const page = () => {
     return (
         <div>
-            All Courses
+            <AllCourses></AllCourses>
         </div>
     );
 };

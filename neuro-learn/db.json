@@ -19,7 +19,7 @@
     "rating": 4.9,
     "level": "Intermediate",
     "description": "Build and train deep neural networks using modern frameworks.",
-    "image": "/course2.jpeg",
+    "image": "/crs2.png",
     "category": "AI & ML"
   },
   {
@@ -30,7 +30,7 @@
     "rating": 4.8,
     "level": "Intermediate",
     "description": "Learn how machines understand and process human language.",
-    "image": "/course3.jpeg",
+    "image": "/crs3.png",
     "category": "AI & ML"
   },
   {
@@ -41,18 +41,18 @@
     "rating": 4.6,
     "level": "Intermediate",
     "description": "Explore image processing and object detection techniques.",
-    "image": "/course4.jpeg",
+    "image": "/crs4.png",
     "category": "AI & ML"
   },
   {
     "id": 5,
-    "title": "AI Research Methodology",
+    "title": "AI and Research Methodology  (AIR) ",
     "instructor": "Dr. Omar Faruq",
     "duration": "12 hours",
     "rating": 4.9,
     "level": "Advanced",
     "description": "Learn how to conduct and publish research in artificial intelligence.",
-    "image": "/course5.jpeg",
+    "image": "/crs5.png",
     "category": "Research"
   },
   {
@@ -63,7 +63,7 @@
     "rating": 4.7,
     "level": "Advanced",
     "description": "Master decision-making algorithms and training agents in dynamic environments.",
-    "image": "/course6.jpeg",
+    "image": "/crs6.png",
     "category": "AI & ML"
   }
 ] , 

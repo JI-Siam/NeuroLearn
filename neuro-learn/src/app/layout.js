@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
       data-theme="light"
       className={`${ubuntu.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-gradient-to-br from-slate-100 via-purple-100 to-indigo-100">
         {children}
         <ToastContainer />
         </body>

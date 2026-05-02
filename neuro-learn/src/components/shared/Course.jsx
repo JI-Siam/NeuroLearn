@@ -1,7 +1,9 @@
 
+import Link from "next/link";
 import { IoIosStar } from "react-icons/io";
 
 const Course = ({course}) => {
+  console.log(course.id) ;
     return (
         <div>
                 <div className="card bg-base-100  shadow-sm shadow-purple-900">
@@ -17,7 +19,7 @@ const Course = ({course}) => {
     </h2>
     <p>{course.instructor}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">View</button>
+      <Link href={`/courses/${course.id}`} className="btn btn-primary" >View</Link>
     </div>
   </div>
 </div>
