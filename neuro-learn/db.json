@@ -1,0 +1,108 @@
+{
+    "courses" : [
+  {
+    "id": 1,
+    "title": "Machine Learning Fundamentals",
+    "instructor": "Dr. Sarah Khan",
+    "duration": "18 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "Understand the core concepts of machine learning, including supervised and unsupervised learning.",
+    "image": "/crs1.png",
+    "category": "AI & ML"
+  },
+  {
+    "id": 2,
+    "title": "Deep Learning with Neural Networks",
+    "instructor": "Michael Lee",
+    "duration": "22 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Build and train deep neural networks using modern frameworks.",
+    "image": "/course2.jpeg",
+    "category": "AI & ML"
+  },
+  {
+    "id": 3,
+    "title": "Natural Language Processing (NLP)",
+    "instructor": "Dr. Ayesha Rahman",
+    "duration": "16 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Learn how machines understand and process human language.",
+    "image": "/course3.jpeg",
+    "category": "AI & ML"
+  },
+  {
+    "id": 4,
+    "title": "Computer Vision Essentials",
+    "instructor": "David Chen",
+    "duration": "15 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Explore image processing and object detection techniques.",
+    "image": "/course4.jpeg",
+    "category": "AI & ML"
+  },
+  {
+    "id": 5,
+    "title": "AI Research Methodology",
+    "instructor": "Dr. Omar Faruq",
+    "duration": "12 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Learn how to conduct and publish research in artificial intelligence.",
+    "image": "/course5.jpeg",
+    "category": "Research"
+  },
+  {
+    "id": 6,
+    "title": "Reinforcement Learning Mastery",
+    "instructor": "Emily Watson",
+    "duration": "20 hours",
+    "rating": 4.7,
+    "level": "Advanced",
+    "description": "Master decision-making algorithms and training agents in dynamic environments.",
+    "image": "/course6.jpeg",
+    "category": "AI & ML"
+  }
+] , 
+
+"instructors" : [
+  {
+    "id": 1,
+    "name": "Dr. Sarah Khan",
+    "expertise": "Machine Learning, Data Science",
+    "experience": "8+ years",
+    "courses": 12,
+    "rating": 4.8,
+    "students": 15000,
+    "image": "/ins1.jpeg",
+    "bio": "AI researcher specializing in supervised learning and predictive modeling."
+  },
+  {
+    "id": 2,
+    "name": "Michael Lee",
+    "expertise": "Deep Learning, Neural Networks",
+    "experience": "10+ years",
+    "courses": 9,
+    "rating": 4.9,
+    "students": 20000,
+    "image": "/ins3.jpeg",
+    "bio": "Expert in deep neural networks with industry experience in large-scale AI systems."
+  },
+ 
+  {
+    "id": 5,
+    "name": "Dr. Omar Faruq",
+    "expertise": "AI Research, Reinforcement Learning",
+    "experience": "11+ years",
+    "courses": 6,
+    "rating": 4.9,
+    "students": 9000,
+    "image": "/ins2.jpeg",
+    "bio": "Researcher in reinforcement learning and AI methodologies with published papers."
+  }
+
+]
+ }

@@ -12,7 +12,7 @@ const user = session?.user ;
   console.log(user , "session user") ;
 
     return (
-<div className="max-lg:collapse bg-base-200 lg:mb-20 sm:mb-10 shadow-sm lg:px-20 bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 text-white">
+<div className="max-lg:collapse  shadow-sm lg:px-20 bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 text-white">
   <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
   <label htmlFor="navbar-1-toggle" className="fixed inset-0 hidden max-lg:peer-checked:block"></label>
   <div className="collapse-title navbar">
