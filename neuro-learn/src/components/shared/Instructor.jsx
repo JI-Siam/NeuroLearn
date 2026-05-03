@@ -3,7 +3,7 @@ import React from 'react';
 const Instructor = ({instructor}) => {
     return (
         <div>
-            <div className="card bg-gradient-to-br from-slate-100 via-purple-200 to-slate-100  w-96 shadow-sm">
+            <div className="card bg-gradient-to-br from-slate-100 via-violet-200 to-slate-100  w-96 shadow-sm">
                 <figure className="px-10 pt-10">
                     <img
                     src={instructor.image}

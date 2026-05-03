@@ -4,7 +4,7 @@ import AuthHeader from '@/components/shared/AuthHeader';
 
 const AuthLayout = ({children}) => {
     return (
-        <div>
+        <div className=''>
                 <AuthHeader></AuthHeader>
                 {children}
         </div>

@@ -4,13 +4,14 @@ import Image from 'next/image'
 const Banner = () => {
     return (
         <div className=''>
-                <div className="card image-full  h-[70vh] shadow-sm">
+                <div   className="card image-full  h-[80vh] shadow-sm" >
                 <figure >
                      <Image
                     src="/bannerImg.png"
                     fill
                     alt="banner image"
                     className=''
+                    style={{ filter: 'brightness(100%)' }}
                     />
                 </figure>
                 <div className="card-body px-20 py-50">

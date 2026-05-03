@@ -38,7 +38,7 @@ const LoginForm = () => {
     }
     return (
         <div className='flex justify-center items-center my-20'>
-            <form action="" onSubmit={handleSubmit(handleLogin)}>
+            <form action="" method="post" onSubmit={handleSubmit(handleLogin)}>
 
                 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
                     <legend className="fieldset-legend">Login</legend>
@@ -52,7 +52,7 @@ const LoginForm = () => {
                     {errors.password && <p className='text-red-700'>{errors.password.message}</p>}
 
                     <input type="submit" className="btn btn-neutral mt-4" value="Login"/>
-                     <btn onClick={handleGoogleLogin} className="btn btn-neutral mt-4"> <FaGoogle></FaGoogle>Google</btn>
+                     <button onClick={handleGoogleLogin} className="btn btn-neutral mt-4"> <FaGoogle></FaGoogle>Google</button>
                     <p> Don't Have an Accout?  <Link href="\signup" className='text-primary font-bold'>Register Here</Link></p> 
                 </fieldset>
             </form>
