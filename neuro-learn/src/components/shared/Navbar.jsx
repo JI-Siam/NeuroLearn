@@ -1,15 +1,27 @@
 'use client'
-import React from 'react';
+
 import Link from 'next/link'
  import { authClient } from "@/lib/auth-client" ;
 
+import { useRouter } from "next/navigation";
+
+
 
 const Navbar = () => {
-
- 
+  const router = useRouter();
 const { data: session } = authClient.useSession() ; 
 const user = session?.user ;
   //console.log(user , "session user") ;
+
+  const handleLogout = async()=>{
+      await authClient.signOut({
+    fetchOptions: {
+      onSuccess: () => {
+        router.push("/"); // redirect to home
+      },
+    },
+});
+  } 
 
     return (
 <div className="max-lg:collapse  shadow-sm lg:px-20 bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 text-white">
@@ -38,7 +50,7 @@ const user = session?.user ;
               <img src={user.image} alt="avatar" />
             </div>
           </div>
-           <button className="ml-2 btn" onClick={async() => await authClient.signOut()}>Logout</button>
+           <button className="ml-2 btn" onClick={handleLogout}>Logout</button>
           </div>) : 
            ( <div>
               <Link href="\login" className="btn mr-4">Login</Link>
