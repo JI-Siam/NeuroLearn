@@ -4,8 +4,8 @@ import React from 'react';
 
 const Tips = () => {
     return (
-        <div className=' mt-40 bg-gradient-to-br  from-slate-100 via-indigo-100 to-slate-100'>
-            <div className='mx-auto container p-10'>
+        <div className=' mt-40 '>
+            <div className='mx-auto container'>
                   <h3 className='text-5xl font-bold text-center font-[--font-roboto-slab]  my-20'>Learning Tips</h3>
 
              <h3 className='text-2xl font-bold text-black/55  my-10'>Study Techniques</h3>
