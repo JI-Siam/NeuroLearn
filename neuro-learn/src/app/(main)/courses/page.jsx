@@ -2,7 +2,7 @@ import AllCourses from '@/components/courses/AllCourses';
 
 
 const page = async () => {
-     const res = await fetch("http://localhost:3004/courses"); 
+     const res = await fetch("https://neuro-learn-server.onrender.com/courses"); 
     const courses = await res.json(); 
     return (
         <div>

@@ -6,7 +6,7 @@ import Course from '../shared/Course.jsx';
 
 const Courses = async () => {
   
-    const res = await fetch("http://localhost:3004/courses"); 
+    const res = await fetch("https://neuro-learn-server.onrender.com/courses"); 
     const courses = await res.json(); 
     const topCourses = courses.sort((a,b) => b.rating - a.rating).slice(0,3); 
 

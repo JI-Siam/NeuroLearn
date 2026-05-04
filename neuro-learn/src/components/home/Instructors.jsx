@@ -3,7 +3,7 @@ import Instructor from '../shared/Instructor';
 import Marquee from 'react-fast-marquee';
 
 const Instructors = async () => {
-    const res = await fetch("http://localhost:3004/instructors"); 
+    const res = await fetch("https://neuro-learn-server.onrender.com/instructors"); 
     const instructors = await res.json() ;
     return (
      <div className='container mx-auto my-20'>

@@ -1,6 +1,6 @@
 
 const Details =  async ({id}) => {
-      const res = await fetch("http://localhost:3004/courses"); 
+      const res = await fetch("https://neuro-learn-server.onrender.com/courses"); 
     const courses = await res.json(); 
     const course = courses.find(crs => crs.id == id) ; 
 

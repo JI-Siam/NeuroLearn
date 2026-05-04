@@ -1,7 +1,7 @@
 import TrendingSwipper from "./TrendingSwipper";
 
 const Trending = async () => {
-      const res = await fetch("http://localhost:3004/courses"); 
+      const res = await fetch("https://neuro-learn-server.onrender.com/courses"); 
     const courses = await res.json(); 
 
     const trendingCourses = courses.filter(crs => (crs.id == '2' || crs.id== '3' || crs.id== '4'));
