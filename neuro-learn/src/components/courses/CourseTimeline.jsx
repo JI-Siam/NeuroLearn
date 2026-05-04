@@ -3,7 +3,9 @@ import React from 'react';
 const CourseTimeline = () => {
     return (
         <div>
-                <ul className="timeline timeline-vertical lg:timeline-horizontal">
+            <h2 className='text-2xl font-bold text-center'>Course Timeline</h2>
+            <div className='flex justify-center items-center my-10 '>
+                <ul className="timeline timeline-vertical lg:timeline-horizontal text-black">
   <li>
     <div className="timeline-start">Jan</div>
     <div className="timeline-middle">
@@ -21,10 +23,10 @@ const CourseTimeline = () => {
       </svg>
     </div>
     <div className="timeline-end timeline-box">Fundamental Concepts</div>
-    <hr />
+    <hr className='bg-primary' />
   </li>
   <li>
-    <hr />
+    <hr  className='bg-primary'/>
     <div className="timeline-start">March</div>
     <div className="timeline-middle">
       <svg
@@ -41,10 +43,10 @@ const CourseTimeline = () => {
       </svg>
     </div>
     <div className="timeline-end timeline-box">Hands on Coding</div>
-    <hr />
+    <hr className='bg-primary'/>
   </li>
   <li>
-    <hr />
+    <hr className='bg-primary'/>
     <div className="timeline-start">April</div>
     <div className="timeline-middle">
       <svg
@@ -60,12 +62,12 @@ const CourseTimeline = () => {
         />
       </svg>
     </div>
-    <div className="timeline-end timeline-box"></div>
-    <hr />
+    <div className="timeline-end timeline-box">Small Practise Projects</div>
+    <hr className='bg-primary' />
   </li>
   <li>
-    <hr />
-    <div className="timeline-start">Small Practise Projects</div>
+    <hr className='bg-primary'/>
+    <div className="timeline-start">May</div>
     <div className="timeline-middle">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +83,11 @@ const CourseTimeline = () => {
       </svg>
     </div>
     <div className="timeline-end timeline-box">Production Grade Projects</div>
-    <hr />
+    <hr className='bg-primary'/>
   </li>
   <li>
-    <hr />
-    <div className="timeline-start">May</div>
+    <hr className='bg-primary'/>
+    <div className="timeline-start">June</div>
     <div className="timeline-middle">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -103,6 +105,7 @@ const CourseTimeline = () => {
     <div className="timeline-end timeline-box">Final Project</div>
   </li>
 </ul>
+        </div>
         </div>
     );
 };

@@ -6,7 +6,7 @@ const Details =  async ({id}) => {
 
     return (
         <div>   
-            <div className="hero bg-base-200 h-[80vh]">
+            <div className="hero h-[80vh]">
             <div className="hero-content flex-col lg:flex-row">
                 <div>
                               <img
