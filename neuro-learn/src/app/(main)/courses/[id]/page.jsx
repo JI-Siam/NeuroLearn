@@ -1,4 +1,5 @@
 
+import CourseTimeline from '@/components/courses/CourseTimeline';
 import Details from '@/components/courses/Details';
 import { Suspense } from 'react';
 
@@ -11,6 +12,7 @@ const page = async ({params}) => {
             <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
                 <Details id={id}></Details>
             </Suspense>
+            <CourseTimeline></CourseTimeline>
         </div>
     );
 };

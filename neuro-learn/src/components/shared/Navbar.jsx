@@ -17,7 +17,7 @@ const user = session?.user ;
       await authClient.signOut({
     fetchOptions: {
       onSuccess: () => {
-        router.push("/"); // redirect to home
+        router.push("/login"); // redirect to home
       },
     },
 });
