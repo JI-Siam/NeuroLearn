@@ -2,7 +2,7 @@
 
 NeuroLearn is a modern online learning platform offering curated courses, bite-sized lessons, and skill-based programs (Artificial Intilligence and Research). Learners can explore interactive lessons, watch video content, complete hands-on exercises, and enroll in guided tracks designed to build practical, job-ready skills.
 
-Live demo: 
+Live demo: https://neuro-learn-2.vercel.app 
 
 ## Purpose
 
